@@ -1,0 +1,65 @@
+.lowfooter{
+    margin: 0;
+}
+#toggle2{
+    display: none;
+}
+.lowchat{
+    margin: 1rem;
+    position: fixed;
+    width: 70%;
+    bottom: 2rem;
+    right: -80rem;
+    z-index: 9;
+    transition: all .5s ease;
+    background-color: var(--nc-lk-1);
+    border-radius: 1rem;
+}
+.lowfooter a{
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--nc-tx-2);
+    border-bottom: 1px solid var(--nc-lk-1);
+}
+.lowfooter label:hover,
+.lowfooter label:active{
+    background-color: var(--red-bg);
+} 
+.lowfooter label{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    
+    border: 1px solid var(--nc-tx-2);
+    border-radius: .2rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow-bg);
+    
+}
+#toggle2:checked ~ .lowchat{
+    right: 1.5rem;
+    transition: all .5s ease;
+}
+.spjall{
+    margin: 1rem;
+	padding: 2rem;
+	border: 1px solid var(--nc-bg-3);
+	border-radius: 4px;
+}
+@media screen and (min-width:60rem) {
+    .lowchat{
+        width: 30%;
+    }
+}
+@media screen and (max-width:80rem) {
+    .lowchat{
+        width: 55%;
+    }
+}

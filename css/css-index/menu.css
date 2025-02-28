@@ -1,0 +1,112 @@
+.mynd {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--yellow-bg);
+    color: var(--nc-tx-2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid var(--nc-lk-1);
+}
+.mynd img{
+    width: 100%;
+    height: auto;
+}
+.mynd col-2{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.mynd{
+    border-radius: 1.5rem;
+}
+.byrja{
+    text-align: right;
+    margin-right: 5rem;
+    margin-top: -10rem;
+}
+.topnav{
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: .5rem;
+}
+#toggle{
+    display: none;
+}
+.topmenu a{
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--nc-tx-2);
+    border-bottom: 1px solid var(--nc-lk-1);
+}
+.topnav label:hover,
+.topnav label:active{
+    background-color: var(--red-bg);
+}
+.topnav label{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0 .3rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--nc-tx-2);
+    border-radius: .2rem;
+}
+#toggle:checked ~ .topmenu{
+    right: 2.3rem;
+    transition: all .5s ease;
+} 
+.topmenu section{
+    margin: 0;
+}
+.socialbutts {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
+}
+.socialbutts a{
+    padding: .5rem 1rem;
+    border: 0;
+}
+@media screen and (min-width:60rem) {
+    .topmenu{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        flex-flow: row;
+        justify-content: flex-end;
+        transition: none;
+    }
+    .topmenu a{
+        border: 0;
+    }
+    .topnav{
+        text-align: right;
+        background-color: var(--yellow-bg);
+        padding: 0 0;
+    }
+    .topnav label{
+        display: none;
+    }
+}
+@media screen and (min-width:80rem) {
+    .topnav{
+        padding: 0 0;
+    }
+    .byrja{
+    text-align: right;
+    margin-right: 5rem;
+    margin-top: -10rem;
+}
+}

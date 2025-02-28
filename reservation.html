@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Dawid Norbert Piecha">
+    <title>Verkefni 7 veitingastaður</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css_all/new.css">
+    <link rel="stylesheet" href="css/css_all/grid.css">
+    <link rel="stylesheet" href="css/css_all/custom.css">
+    <link rel="stylesheet" href="css/css_all/table.css">
+    <link rel="stylesheet" href="css/css_all/form.css">
+    <link rel="stylesheet" href="css/css-index/menu.css">
+    <link rel="stylesheet" href="css/css_all/popup.css">
+    <link rel="stylesheet" href="css/css_all/spjallbox.css">
+    <link rel="stylesheet" href="css/css_all/icon.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+    <link rel="stylesheet" href="css/css_all/animation.css">
+    <link rel="stylesheet" href="css/css_all/menu.css">
+</head>
+<body>
+  <section class="menuBg">
+    <a href="index.html"><p>Menu</p></a>
+    <nav class="topnav">
+      <input type="checkbox" id="toggle">
+      <label for="toggle">&#9776;</label>
+      <section class="topmenu">
+          <a href="#"><span class="icon-users"></span> WHO</a>
+          <a href="#"><span class="icon-home"></span> WHERE</a>
+          <a href="#"><span class="icon-clock"></span> WHEN</a>
+          <a href="#"><span class="icon-price-tag"></span> Buy tickets</a>
+          <section class="socialbutts">
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-instagram"></span></a>
+            <a href="#"><span class="icon-github"></span></a>
+          </section>
+      </section>
+    </nav>
+  </section>
+  <main>
+    <section>
+      <section class="col-2">
+      <form>
+        <img src="images/R.jpg" alt="reservation" class="mynd">
+      </form>      
+      <form>
+        <h2>Table Reservation</h2>
+        <fieldset>
+          <legend>Reserve a Table</legend>
+          <section class="col-1">
+            <p>
+              <label>fornafn</label><br>
+              <input type="text" name="first_name" required placeholder="fornafn">
+            </p>
+            <p>
+              <label>eftirnafn</label><br>
+              <input type="text" name="last_name" required placeholder="eftirnafn">
+            </p>
+          </section>
+          <section class="col-1">
+            <p>
+              <label><span class="icon-mail3"></span> Tölvupóstur</label><br>
+              <input type="email" name="email" required placeholder="Email">
+            </p>
+            <p>
+              <label>símanúmer</label><br>
+              <input type="tel" name="phone number" placeholder="7 digits only" pattern="\d{3}(?:[\-\s]?)\d{4}">
+            </p>
+          </section>
+          <p>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+          </p>
+          <p>
+            <label for="res_date">Reservation Date:</label><br>
+            <input type="date" id="res_date" name="res_date" required>
+          </p>
+          <p>
+            <label for="res_time">Reservation Time:</label><br>
+            <input type="time" id="res_time" name="res_time" min="16:00" max="24:00" required>
+          </p>
+          <p>
+            <button type="submit">Reserve</button>
+          </p>
+        </fieldset>
+    </section>
+      <p><em>This is not a real form and does not submit or save any information.</em></p>
+      
+      </form>
+    </section>
+  </main>
+</body>
+</html>
