@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Dawid Norbert Piecha">
+    <title>Verkefni 7 veitingastaður</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css_all/new.css">
+    <link rel="stylesheet" href="css/css_all/grid.css">
+    <link rel="stylesheet" href="css/css_all/custom.css">
+    <link rel="stylesheet" href="css/css_all/table.css">
+    <link rel="stylesheet" href="css/css_all/form.css">
+    <link rel="stylesheet" href="css/css-index/menu.css">
+    <link rel="stylesheet" href="css/css_all/popup.css">
+    <link rel="stylesheet" href="css/css_all/spjallbox.css">
+    <link rel="stylesheet" href="css/css_all/icon.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+    <link rel="stylesheet" href="css/css_all/animation.css">
+    <link rel="stylesheet" href="css/css_all/menu.css">
+    <link rel="stylesheet" href="css/css-arskrift/grid.css">
+</head>
+<body>
+  <section class="menuBg">
+    <a href="index.html"><p>Menu</p></a>
+    <nav class="topnav">
+      <input type="checkbox" id="toggle">
+      <label for="toggle">&#9776;</label>
+      <section class="topmenu">
+        <a href="umokkur.html"><span class="icon-users"></span> ABOUT US</a>
+        <a href="reservation.html"><span class="icon-clock"></span> RESERVATION</a>
+        <section class="socialbutts">
+          <a href="https://www.facebook.com/"><span class="icon-facebook"></span></a>
+          <a href="https://x.com/"><span class="icon-twitter"></span></a>
+          <a href="https://www.instagram.com/"><span class="icon-instagram"></span></a>
+          <a href="https://github.com/Dazer210/lokavekefni"><span class="icon-github"></span></a>
+          </section>
+      </section>
+    </nav>
+  </section>
+  <main>
+    <section class="subscription" >
+      <h1>Subscribe to Our Breakfast Service</h1>
+      <p>Enjoy a delicious breakfast delivered to your door every morning. Subscribe to our breakfast service and start your day with a smile!</p>
+      <form action="takk.html">
+        <fieldset>
+          <legend>Breakfast Subscription Form</legend>
+          <section class="col-3">
+            <div>
+              <p>
+                <label for="first_name">First Name:</label><br>
+                <input type="text" id="first_name" name="first_name" required placeholder="First Name">
+              </p>
+            </div>
+            <div>
+              <p>
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" id="last_name" name="last_name" required placeholder="Last Name">
+              </p>
+            </div>
+            <div>
+              <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Email">
+              </p>
+            </div>
+          </section>
+          <p>
+            <label for="subscription_type">Subscription Type:</label><br>
+            <select id="subscription_type" name="subscription_type" required onchange="toggleOptions()">
+              <option value="coffee">Coffee Subscription</option>
+              <option value="sandwiches">Sandwiches Subscription</option>
+            </select>
+          </p>
+          <p>
+            <label for="coffee_options">Preferred Coffee Options:</label><br>
+            <select id="coffee_options" name="coffee_options">
+              <option value="latte">Latte</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="espresso">Espresso</option>
+              <option value="americano">Americano</option>
+            </select>
+          </p>
+          <p>
+            <label for="sandwich_options">Preferred Sandwich Options:</label><br>
+            <select id="sandwich_options" name="sandwich_options">
+              <option value="avocado_toast">Avocado Toast</option>
+              <option value="egg_benedict">Egg Benedict</option>
+              <option value="club_sandwich">Club Sandwich</option>
+              <option value="tuna_sandwich">Tuna Sandwich</option>
+            </select>
+          </p>
+          <p>
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any special requests or dietary restrictions?"></textarea>
+          </p>
+          <p>
+            <button type="submit">Subscribe</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

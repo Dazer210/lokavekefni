@@ -1,0 +1,14 @@
+.big_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-bottom: 5rem;
+    padding: 0 10rem;
+}
+@media screen and (max-width:60rem) {
+    .big_container{
+        padding-bottom: 0rem;
+        padding: 0 1rem;
+    }
+    
+}

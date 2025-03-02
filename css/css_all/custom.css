@@ -1,0 +1,75 @@
+
+.bannerBg{
+    background-color: var(--blue-bg);
+}
+.logo {
+    margin: auto;
+
+}
+center,
+.value {
+    text-align: center;
+}
+.value h1 {
+    background: var(--yellow-bg);
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-weight: bold; 
+    margin: 20px auto; 
+    color: #FFFFFF; 
+}
+
+header h1 {
+    font-weight: 400;
+    text-align: right;
+}
+header {
+	background: var(--nc-bg-1);
+	border-bottom: 1px solid var(--nc-bg-3);
+
+}
+
+header h1,
+header h2,
+header h3 {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+header > *:first-child {
+	margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+header > *:last-child {
+	margin-bottom: 0;
+    padding-bottom: 9rem;
+}
+
+.headerlogo {
+    margin: auto;
+    text-align: center;
+}
+.logo {
+    font-size:4rem;
+    margin: auto;
+    padding-top: 5rem;
+    color: var(--red-bg);
+}
+@media screen and (min-width:60rem){
+    header > *:first-child {
+        margin-bottom: auto;
+    }    
+}
+@media screen and (min-width:80rem){
+    header > *:first-child {
+        margin-bottom: auto;
+    }   
+    header > *:last-child {
+        margin-bottom: -3rem;
+    }
+}

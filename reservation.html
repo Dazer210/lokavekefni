@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Dawid Norbert Piecha">
+    <title>Verkefni 7 veitingastaður</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css_all/new.css">
+    <link rel="stylesheet" href="css/css_all/grid.css">
+    <link rel="stylesheet" href="css/css_all/custom.css">
+    <link rel="stylesheet" href="css/css_all/table.css">
+    <link rel="stylesheet" href="css/css_all/form.css">
+    <link rel="stylesheet" href="css/css-index/menu.css">
+    <link rel="stylesheet" href="css/css_all/popup.css">
+    <link rel="stylesheet" href="css/css_all/spjallbox.css">
+    <link rel="stylesheet" href="css/css_all/icon.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+    <link rel="stylesheet" href="css/css_all/animation.css">
+    <link rel="stylesheet" href="css/css_reservation/grid.css">
+    <link rel="stylesheet" href="css/css_all/menu.css">
+</head>
+<body>
+  <section class="menuBg">
+    <a href="index.html"><p>Menu</p></a>
+    <nav class="topnav">
+      <input type="checkbox" id="toggle">
+      <label for="toggle">&#9776;</label>
+      <section class="topmenu">
+        <a href="umokkur.html"><span class="icon-users"></span> ABOUT US</a>
+        <a href="reservation.html"><span class="icon-clock"></span> RESERVATION</a>
+        <section class="socialbutts">
+          <a href="https://www.facebook.com/"><span class="icon-facebook"></span></a>
+          <a href="https://x.com/"><span class="icon-twitter"></span></a>
+          <a href="https://www.instagram.com/"><span class="icon-instagram"></span></a>
+          <a href="https://github.com/Dazer210/lokavekefni"><span class="icon-github"></span></a>
+          </section>
+      </section>
+    </nav>
+  </section>
+  <main>
+    <section>
+      <section class="col-2">
+      <form class="container">
+        <img src="images/R.jpg" alt="reservation" class="mynd">
+      </form>      
+      <form class="container" action="takk.html">
+        <fieldset>
+          <legend><h2>Reserve a Table</h2></legend>
+          <section class="col-2">
+            <p>
+              <label>fornafn</label><br>
+              <input type="text" name="first_name" required placeholder="fornafn">
+            </p>
+            <p>
+              <label>eftirnafn</label><br>
+              <input type="text" name="last_name" required placeholder="eftirnafn">
+            </p>
+          </section>
+          <section class="col-1">
+            <p>
+              <label><span class="icon-mail3"></span> Tölvupóstur</label><br>
+              <input type="email" name="email" required placeholder="Email">
+            </p>
+            <p>
+              <label>símanúmer</label><br>
+              <input type="tel" name="phone number" placeholder="7 digits only" pattern="\d{3}(?:[\-\s]?)\d{4}">
+            </p>
+          </section>
+          <p>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+          </p>
+          <p>
+            <label for="res_date">Reservation Date:</label><br>
+            <input type="date" id="res_date" name="res_date" required>
+          </p>
+          <p>
+            <label for="res_time">Reservation Time (16:00-23:00 eða 4:00pm- 11:00pm) :</label><br>
+            <input type="time" id="res_time" name="res_time" min="16:00" max="23:00" required>
+          </p>
+          <p>
+            <button type="submit">Reserve</button>
+          </p>
+        </fieldset>
+    </section>
+      <p><em>This is not a real form and does not submit or save any information.</em></p>
+      
+      </form>
+    </section>
+  </main>
+</body>
+</html>
